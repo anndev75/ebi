@@ -1,0 +1,111 @@
+:root{
+    --main-color: rgb(196, 0, 0);
+    --color1: #000;
+    --color2: #000;
+    --color3: #000;
+    --color4: #000;
+    --color5: #000;
+    --color6: #000;
+    --color7: #000;
+    --header-background-img: url(media-sources/fondo.jpg);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-header{
+    display: flex;
+    background-image: var(--header-background-img);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .pedir-delivery, .otras-acciones{
+        position: absolute;
+        display:inline-block;
+        background-color: red;
+        top: 5px;
+        transition: top 0.3s ease-out;
+        height: 5vh;
+        aspect-ratio: 1/1;
+    }
+    .pedir-delivery{
+        right: 5px;
+    }
+    .otras-acciones{
+        left: 5px;
+    }
+
+    .logo, .title{
+        position: absolute;
+        display:inline-block;
+        background-color: red;
+        left: 50%;
+    }
+    .logo{
+        top: 48%;
+        transform: translate(-50%, -50%);
+        height: 20vh;
+        width: auto;
+    }
+    .title{
+        top: calc(50% + (100vh * 0.1));
+        transform: translate(-50%, 0%);
+        font-size: 5vh;
+    }
+    
+}
+.main-header.sticky-top {
+    position: sticky;
+    width: 100%;
+    top: calc((100vh - 75px) * -1);
+
+
+    background-color: red;
+}
+.main-header.scrolled{
+    /*FLEX*/
+    justify-content: center;
+    gap: 15px;
+
+    .pedir-delivery, .otras-acciones{
+        background-color: red;
+        top: calc(100vh - 10px);
+        transform: translateY(-100%);
+        transition: top 0.3s ease-out;
+    }
+    .pedir-delivery{
+        right: 5px;
+    }
+    .otras-acciones{
+        left: 5px;
+    }
+    .logo, .title{
+        display: inline-block;
+        position: relative;
+        background-color: red;
+        top: calc((100vh - 10px));
+        transform: translateY(-100%);
+        left: 0;
+        
+    }
+    .logo{
+        height: 50px;
+    }
+    .title{
+        height: max-content;
+        font-size: 35px;
+        
+    }
+
+
+
+    
+
+}
+
+
