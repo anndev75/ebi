@@ -1,0 +1,5 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
+<ns0:rect width="24" height="24" fill="#00000000" stroke="#00000000" />
+<ns0:path d="M18 9C18 13.7462 14.2456 18.4924 12.6765 20.2688C12.3109 20.6827 11.6891 20.6827 11.3235 20.2688C9.75444 18.4924 6 13.7462 6 9C6 7 7.5 3 12 3C16.5 3 18 7 18 9Z" stroke="#FFF" stroke-linejoin="round" fill="#00000000" />
+<ns0:circle cx="12" cy="9" r="2" stroke="#FFF" stroke-linejoin="round" fill="#00000000" />
+</ns0:svg>
